@@ -1,0 +1,6 @@
+language: java
+script:
+  - mvn install -DskipTests=true
+jenkins:
+  collect:
+    artifacts: target/*.jar
