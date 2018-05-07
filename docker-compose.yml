@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  hello-jervis:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: hello-jervis-http
+    ports:
+      - 8081:8080
+    networks:
+      - network1
+
+networks:
+  network1:
